@@ -1,0 +1,57 @@
+body {
+    margin : 0;
+    direction: ltr;
+    font-family: "Mukta Mahee" , Arial, Helvetica, sans-serif;
+}
+*, 
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Abril Fatface" , Arial, Helvetica, sans-serif;
+}
+.container-full {
+    width: 100%;
+    padding: 0 15px;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+.heading-font {
+    font-family: "Abril Fatface", times, serif;
+}
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.align-center {
+    align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.mb-45 {
+    margin-bottom: 45px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
