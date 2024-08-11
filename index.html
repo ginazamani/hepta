@@ -9,11 +9,11 @@
     </head>
     <body>
         <div class="header-background">
-            <div class="header-menu flex space-between align-center">
+            <div class="header-menu flex space-between">
                 <div class="logo heading-font">
                     <a href="index.html">Hepta</a>
                 </div>
-                <div class="hamburger-menu flex space-between flex-col">
+                <div class="hamburger-menu flex space-between flex-col" onclick="openhamburgermenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -24,7 +24,31 @@
                 <p>A free template by <a href="#">Colorlib.</a> Download and share!</p>
                 <a class="visit mt-40" href="#">Visit Colorlib</a> 
             </div>
+            <div class="hidden" id="pull-down">
+                <div class="menu-bar">
+                    <ul class="close-logo flex space-between flex-col" onclick="closehamburgermenu()">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="menu-list flex flex-col align-center gap-30">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
+        <script>
+            function openhamburgermenu() {
+                document.getElementById("pull-down").style.display="inline-block"
+            }
+            function closehamburgermenu() {
+                document.getElementById("pull-down").style.display="none"
+            }
+        </script>
     </body>
 </html>
